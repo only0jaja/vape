@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.myheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-icons{
+    display: flex;
+    padding-right: 20px;
+}
+.nav-icons a{
+    padding: 10px;
+}
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border: none;
+}
+.home-content h2{
+    font-size: 4rem;
+    color: white;
+}
+.home-content span{
+    background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.home-content p{
+    font-size: 1.1rem;
+}
+.home-img img{
+    border: none;
+    width: 50vw;
+}
+.shop-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#products{
+    background-color: hsl(0, 0%, 15%);
+    height: 150vh;
+    padding: 100px 7% 30px;
+}
+.product-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr)); 
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transition: 0.2s; 
+    background-color: hsl(0, 0%, 30%);
+}
+.product h3{
+    font-size: 20px;
+}
+.product-price{
+    font-size: 17px;
+    font-weight: bold;
+}
+.product button{
+    background-color: gold;
+    border: none;
+    padding: 10px 12px;
+    margin: 0 40px;
+    border-radius: 10px;
+    transition: .2s;
+    
+}
+
+.product img {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.product img:hover{
+    transform: scale(1.1);
+}
+
+
+.product button:hover{
+    transform: scale(1.1);
+}
+
+.About{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    position: relative; 
+    height: 100vh;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.about-context h1{
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-context p{
+    font-size: 22px;
+    color: white;
+}
+.cont {
+    width: 50vmin; 
+    position: relative;
+    overflow: hidden; 
+    border: 2px solid white; 
+    
+    object-fit: cover;
+}
+
+.carousel {
+    display: flex; 
+    width: 100%; 
+    animation: carusel 20s infinite; 
+}
+
+.carousel img{
+    width: 100%;
+    height: 30vw;
+    transition: .3s;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+
+@keyframes carusel {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.contact-section{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 25%);
+}
+.contact-section img{
+    width: 20vw;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.contact-section h1{
+    color: white;
+    font-size: 2rem;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
